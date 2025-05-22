@@ -1,0 +1,1 @@
+The project is for one of my subject Final Project. In this case, Christian Wijaya is a fashion website. The task is to make ‘Christian Wijaya’ a website design and the website itself. The design is made in Figma and the Website is made with HTML, CSS, and JS.
