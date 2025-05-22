@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Wijaya - Sign Up for Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		<nav>
+            <a href="../home/homePage.html"><img class="nav-item logo" src="../../Assets/Navigation Bar/Logo.png" alt="CW Logo"></a>
+
+			<ul class="nav-item menu-nav">
+				<li><a href="../product/productPage.html">Product</a></li>
+				<li><a href="../event/eventPage.html">Event</a></li>
+				<li><a href="../aboutUs/aboutUsPage.html">About Us</a></li>
+			</ul>
+
+			<a href="#"><img class="nav-item profile"  src="../../Assets/Navigation Bar/Profile.png" alt="Profile"></a>
+
+			<div class="nav-item menu-toggle">
+				<span class="menu-toggle-item"></span>
+				<span class="menu-toggle-item"></span>
+				<span class="menu-toggle-item"></span>
+			</div>
+		</nav>
+	</header>
+
+	<div class="cont-head">
+		<p class="cont-head-one">
+			Join the <i>Keep:Wonder</i> Collection by Christian Wijaya
+		</p>
+
+		<p class="cont-head-two">
+			Please fill in the information below:
+		</p>
+	</div>
+
+	<form onsubmit="validateForm(event)" class="content" id="content" method="post">
+
+		<div class="name">
+			<p class="full-name">Full Name</p>
+			<input type="text" class="fName" id="fName" placeholder="Full Name">
+        </div>
+		<span class="name-err" id="name-err">Name should be longer than 3 Characters</span>
+
+		<div class="email">
+			<p class="email-input">Email
+			</p>
+			<input type="text" class="em" id="em" placeholder="Email">
+        </div>
+		<span class="email-err" id="email-err">Email should contain @ and proper domain</span>
+
+		<div class="bday">
+			<p class="birthday">Birthdate</p>
+			<input type="number" class="dd" id="dd" placeholder="DD">
+			<input type="number" class="mm" id="mm" placeholder="MM">
+			<input type="number" class="yy" id="yy" placeholder="YYYY">
+		</div>
+		<span class="bday-err" id="bday-err">Please enter the right birthday date (Numbers only)</span>
+
+		<div class="gender">
+			<p class="gend">Gender</p>
+
+			<div class="gender-input">
+				<input type="radio" name="gender" value="male" id="gender-male" >
+				<label for="gender-male" class="gender-radio" id="gen-male">Male</label>
+
+				<input type="radio" name="gender" value="female" id="gender-female">
+				<label for="gender-female" class="gender-radio" id="gen-fem">Female</label>
+			</div>
+		</div>
+		<span class="gender-err" id="gender-err">Please choose your gender</span>
+
+		<div class="portfolio">
+			<p class="porto">Portfolio</p>
+			<input type="file" class="port-sub" name="porto" id="porto">
+		</div>
+		<span class="port-err" id="port-err">Please upload your portfolio</span>
+		
+		<div class="agree">
+			<input type="checkbox" id="agree" name="agree" value="checked">
+			<label for="agree"> I have read and agree to <a href="#">Terms and Conditions</a> of <i>Christian Wijaya</i></label>
+		</div>
+		<span class="agree-err" id="agree-err">Terms and Conditions must be agreed</span>
+
+		<button type="submit" id="submit" class="submit">Submit</button>
+	</form>
+
+		
+
+	</section>
+
+	<footer>
+		<nav>
+			<div class="nav-foot">
+				<p class="nav-foot-content-header">
+					Follow Us
+				</p>
+
+				<a href="https://x.com" class="nav-foot-content">
+					X
+				</a>
+
+				<a href="https://instagram.com" class="nav-foot-content">
+					Instagram
+				</a>
+
+				<a href="https://tiktok.com" class="nav-foot-content">
+					Tiktok
+				</a>
+			</div>
+
+			<div class="nav-foot">
+				<p class="nav-foot-content-header">
+					Our Products
+				</p>
+
+				<a href="../product/productPage.html" class="nav-foot-content">
+					Keep:Wonder Collection
+				</a>
+
+				<a href="../product/productPage.html" class="nav-foot-content">
+					Wackey Collection
+				</a>
+
+				<a href="../product/productPage.html" class="nav-foot-content">
+					W-Tees Series
+				</a>
+			</div>
+
+			<div class="nav-foot">
+				<a href="../aboutUs/aboutUsPage.html" class="nav-foot-content-header">
+					About Us
+				</a>
+			</div>
+		</nav>
+		
+
+		<div class="footer-logo">
+			<img src="../../Assets/Navigation Bar/Logo.png" alt="CW Logo" class="footer-img">
+		
+			<div class="footer-text">
+				<p class="footer-text-one">
+					Christian Wijaya
+				</p>
+				<p class="footer-text-two">
+					Where luxury meets curiosity
+				</p>
+			</div>
+		</div>
+		
+	</footer>
+</body>
+<script src="script.js"></script>
+</html>
